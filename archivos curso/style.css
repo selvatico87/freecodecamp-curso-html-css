@@ -1,0 +1,131 @@
+/*estos se llaman selectores, nos permiten definir que elementos se veran afectados por las reglas css*/
+
+/* selector de tipo: nos permite asignar estilos a todos los elementos de ese tipo. ejemplo=*/
+h3{ 
+  color:orangered;
+}
+h2{
+  color:green;
+} 
+p{
+  font-family: "Roboto", sans-seri;
+  font-size: 12px;
+  text-align: justify;
+}
+img{
+  width: 500px ;/*ancho*/
+  border-width: 5px;
+  border-color: red;
+  border-style: solid;
+  border-radius: 10px;
+}
+
+/*selector de clase:  selecciona todos los elementos que tiene el atributo de class especificado. se pone un punto antes del nombre de la clase. tiene prioridad sobre los selectores de tipo. ejemplo= */
+.choco{
+  color:chocolate;
+  font-size: 12px;
+  font-family: 'Roboto', sans-seri;
+  text-align: start;
+}
+.titulo{
+  font-family: 'Ephesis', cursive;
+  font-size: 50px;
+}
+.listas{
+  background-color: beige;
+}
+/* selector de ID: funciona igual que los slectores de clase. tiene prioridad sobre los selectores de tipo y de clase. el style en la linea de html tiene prioridad, a excepcion que se agregue !important*/
+#titulo-listas{
+  font-size: 30px;
+  color: silver;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#planeta{
+  border-radius: 50%;
+  border-color: brown;
+  padding: 10px 15px 5px 5px;/*es la distancia entre la imagen y el borde*/
+  background-color: silver;
+  margin: 15px;/*es la distancia entre el borde y el contenedor*/
+  width: 50vw;
+}
+#div-planeta{
+  background-color: gold;
+}
+
+/*selector Universal: selecciona todos los elemento de la pagina, se usan poniendo un asterisco y la regla, y se aplica a cualquier elemento de la pagina que sea compatible
+ ejemplo:*/ 
+/* *{
+      color:purple;
+    }
+/*selector de atributos*/
+img[alt]{    /*seleccionamos todos los atributos del la etiqueta img*/
+  border-radius: 25%;
+}
+[type="radio"]{   /*selecciona todos los atributos type de cualquier etiqueta cuyo valor sea "radio"*/ 
+  margin: 10px;
+}
+a[href="https://www.linkedin.com/in/ignaciogonzalezzorrilla/?originalSubdomain=ar"]{
+  color: green;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/*----------------------------------------------------*/
+
+#contenedor{
+  color: white;
+  padding: 5px;
+  font-size: 15px;
+  background-color: yellow;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.rectangulo{
+  padding: 5px;
+  margin: 5px;
+}
+.px{
+  background-color: crimson;
+  width: 200px;
+}
+.vw{
+  background-color: darkmagenta;
+  width: 20vw;
+}
+.em{
+  background-color: green;
+  width: 15em;
+  font-size: 1.5em;
+}
+/*-------------Fondo del body--------------------*/
+body{
+  background-color: rosybrown;
+}
+
+/*-------------HEX base 16----0al9 de la A la F----------------*/
+/*       #000000     = negro  
+         #ffffff     = blanco   */
+/*         r g b                   */
+/* podemos bucarlos en colorpicker.com*/
+.color{
+  color: #eb06e1
+}
+/*---------------- RGB -----entre 0 y 255---------
+              rgb(155,255,120)
+              podemos agregar un 4to valor para definir la transparencia van del 0.01 al 0.99  
+*/
+.color2{
+  color: rgb(150,255,25,0.3);
+}
+
+/* ------------ variables css -----------*/
+
+.mivariable{
+  --color-fondos: silver;
+}
+.color3{
+  background-color: var(--color-fondos,green);/*el segundo es un valor de respaldo*/
+}
+/* variables globales, puedo redefinirlas dentro de los elementos */
+:root{
+  --colores-letras: black;
+}

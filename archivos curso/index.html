@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+        
+    <title>Hola Mundo</title> <!-- titulo de la pagina-->
+    <!-- aqui podemos agregar stilos css-->
+    <style> 
+      
+    </style>
+  </head>
+  <body>
+    <a href="https://youtu.be/AXPASVeX74o" target="_blank" rel="noopener noreferrer"><img src="./imagenes/gente.jpg" alt="hola mundo gente saludando"></a>
+    <h1 id:titulo class="titulo" style="color:blue">¡Hola, Mundo!</h1>
+    <!-- asi se escriben los comentarios, ejemplo tareas pendientes, o explicaciones para otros desarrolladores-->
+    <main>
+      <a href="#p1">Párrafo 1</a>
+      <a href="#p2">Párrafo 2</a>
+      <a href="#p3">Párrafo 3</a>
+      <a href="#p4">Párrafo 4</a>
+
+      <h2 id="p1"> Parrafo 1</h2><!-- las etiquetas h son para titulos-->
+      <p> esta etiqueta es para un parrafo</p>
+
+      <h2 id="p2"> parrafo 2</h2>
+
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur totam incidunt blanditiis tempore commodi? Suscipit tenetur laudantium error provident, inventore, ratione vel ut dolores, recusandae esse voluptas ipsum praesentium aperiam!</p>
+
+      <h2 id="p3"> parrafo 3</h2>
+
+      <p>kitty Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque incidunt ratione error labore explicabo voluptatibus eum doloribus aperiam natus cumque delectus nemo id, impedit alias ipsam unde ullam molestiae facilis?</p>
+
+      <h2 id="p4"> parrafo 4</h2>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis exercitationem aspernatur ipsa quia iure, magnam nostrum illo cumque impedit fugit veniam laboriosam eligendi nam <s>reiciendis dolorum odio</s>  sequi eos et!</p>
+      <h3>haz click para saber <a href="https://www.linkedin.com/in/ignaciogonzalezzorrilla/?originalSubdomain=ar" target="_blank" rel="noopener noreferrer">mas sobre mi </a> </h3> <!-- agregar enlace externos-->
+
+      <hr><!-- linea horizontal - horizontal row-->
+
+      <h2 id="titulo-listas">Listas</h2>
+      <div class="listas">
+        <h3> lista no <strong>ordenada</strong> </h3>
+        <ul class="choco"> <!-- listas no ordenada-->
+          <li>primer elemento</li>
+          <li>segundo elemento</li>
+          <li>tercer elemento</li>
+        </ul>
+
+        <h3>lista <em>ordenada</em> --</h3>
+        <ol class="choco"><!-- lista ordenada-->
+          <li>uno</li>
+          <li>dos</li>
+          <li>tres</li>
+        </ol>
+      </div>
+      <hr>
+
+      <h2>formularios</h2>
+      <form action="/enviar_respuesta.direccion del servidor">
+        
+        <!--casillas de opciones-->
+        <label for="op2">
+          <input id="op1" type="radio" name="opciones" value="opcion 1" checked> opción 1
+        </label>
+        <label for="op1"> 
+          <input id="op2" type="radio" name="opciones" value="opcion 2"> opción 2
+        </label>
+        
+        <br> <!--break o salto de linea-->
+        
+        <!-- casilla de verificacion-->
+        <label for="ck1">
+          <input type="checkbox" name="verificacion" id="ck1" checked value="check 1">verificacion 1
+        </label><br>
+        <label for="ck2">
+          <input type="checkbox" name="verificacion" id="ck2" value="ckek 2">verificacion 2
+        </label><br>
+        <label for="ck3">
+          <input type="checkbox" name="verificacion" id="ck3" value="check 3">verificacion 3
+        </label><br>
+
+        <!-- texto y boton enviar-->
+        <input type="text" placeHolder="ingresa tu nombre" required><br>
+        <button type="submit">Enviar</button>
+      </form>
+      <div id="div-planeta">
+        <img id="planeta" src="https://img.freepik.com/vector-gratis/pegatina-vintage-globo-dibujos-animados-png_53876-127373.jpg?w=740&t=st=1665182769~exp=1665183369~hmac=ea2620afe67053ba70c588044f347a7f122d94a76518936bd02ef6a223a7e994" alt="imagen vintage del planeta tierra">
+      </div><!--imagenes se cierra sola-->
+    </main>
+    <div id="contenedor">
+      <div class="rectangulo px">200px de ancho</div>
+      <div class="rectangulo vw">200vw de ancho</div>
+      <div class="rectangulo em">15em de ancho</div>
+    </div>
+    <footer><!-- pie de pagina-->
+      <small> Derechos de Autor - Hecho por <a href="https://www.linkedin.com/in/ignaciogonzalezzorrilla/?originalSubdomain=ar" target="_blank" rel="noopener noreferrer"> Ignacio Gonzalez</a></small>
+    </footer>
+  </body>
+</html>
